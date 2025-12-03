@@ -1,4 +1,4 @@
-.hero {
+/* .hero {
   position: relative;
   height: 100vh;
   overflow: hidden;
@@ -24,4 +24,4 @@
   &:hover .hero-video {
     transform: translate(-50%, -50%) scale(1.05);
   }
-}
+} */
