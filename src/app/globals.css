@@ -1,9 +1,11 @@
 @import "tailwindcss";
+
 * {
-  margin: 0;
-  padding: 0;
   font-family: sans-serif;
   box-sizing: border-box;
+}
+html {
+  scroll-behavior: none;
 }
 .container {
   max-width: 1240px;
@@ -11,7 +13,6 @@
   margin: 0 auto;
   padding: 0 20px;
 }
-
 h1,
 h2,
 h3,
@@ -20,9 +21,11 @@ h5,
 h6 {
   cursor: pointer;
 }
+
 li {
   list-style: none;
 }
+
 a {
   text-decoration: none;
 }

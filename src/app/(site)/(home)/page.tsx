@@ -1,5 +1,11 @@
+import LayoutMain from "@/src/components/main/LayoutMain";
+
 const page = () => {
-  return <div>HomePAge</div>;
+  return (
+    <div>
+      <LayoutMain />
+    </div>
+  );
 };
 
 export default page;
