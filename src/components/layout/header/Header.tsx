@@ -20,8 +20,8 @@ const Header: FC = () => {
           <Link href="/company" className="hover:text-orange-500 transition">
             Компании
           </Link>
-          <Link
-            href="/cooperation"
+          <Link 
+            href="/cooporation"
             className="hover:text-orange-500  border-orange-500 pb-1"
           >
             О сотрудничество
@@ -64,6 +64,14 @@ const Header: FC = () => {
               <path d="m6 9 6 6 6-6" />
             </svg>
           </div>
+
+          {/* Language */}
+          <select className="focus:outline-none">
+            <option value="ru">Russia</option>
+            <option value="en">English</option>
+          </select>
+
+          {/* Login Button */}
           <button className="px-6 py-2 bg-orange-500 text-white rounded-lg text-[15px] hover:bg-orange-600 transition">
             Войти
           </button>

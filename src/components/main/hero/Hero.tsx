@@ -23,7 +23,6 @@ export default function Hero() {
       className="w-full h-[90vh] relative overflow-hidden"
       onMouseMove={handleMouseMove}
     >
-      {/* Видео фон */}
       <motion.div
         className="absolute inset-0"
         style={{
@@ -41,9 +40,8 @@ export default function Hero() {
         />
       </motion.div>
 
-      {/* Контент үстүндө */}
       <div className="relative z-10 h-full flex flex-col items-start justify-center px-10 mt-[35px] ml-[60px] text-white">
-        <h1 className="text-5xl font-bold mb-5">
+        <h1 className="text-5xl font-bold mb-2">
           Туры по <span className="text-orange-500">Кыргызстану</span>
         </h1>
 
@@ -51,7 +49,6 @@ export default function Hero() {
           Лучше один раз увидеть, <br /> чем сто раз мечтать
         </p>
 
-        {/* Search Bar */}
         <div className="flex bg-white rounded-full overflow-hidden shadow-lg z-20">
           <select className="h-full px-4 py-3 text-black outline-none border-r z-20">
             <option>Бишкек</option>
