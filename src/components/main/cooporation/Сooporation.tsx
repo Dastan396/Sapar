@@ -29,6 +29,7 @@ const Cooporation = () => {
               горные пики, экскурсии по достопримечательностям, организация
               конференций, трансфер и многое другое.
             </p>
+    
 
             <p className="text-gray-700 leading-relaxed">
               Мы готовы рассмотреть любые варианты сотрудничества с
@@ -67,11 +68,6 @@ const Cooporation = () => {
                     <FaWhatsapp />
                   </Link>
                 </div>
-
-
-
-
-
 
                 <div className="w-12 h-12 bg-white border rounded-full flex items-center justify-center text-blue-500 text-xl">
                   <Link

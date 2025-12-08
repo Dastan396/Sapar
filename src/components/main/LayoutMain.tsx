@@ -1,19 +1,15 @@
-import React from "react";
-import Review from "./review/Review";
-import About from "./about/About";
-
-
-
-
+import Attraction from "./attraction/Attraction";
+import Hero from "./hero/Hero";
+import Tours from "./tours/Tours";
 
 const LayoutMain = () => {
-  return(
-    <>
-    <About/>
-    <Review/>
-    
-    </>
-  ) 
-    
+  return (
+    <div>
+      <Hero />
+      <Tours />
+      <Attraction />
+    </div>
+  );
 };
+
 export default LayoutMain;
