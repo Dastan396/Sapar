@@ -1,6 +1,12 @@
 @import "tailwindcss";
+@import "flowbite";
 
 * {
+<<<<<<< HEAD
+  /* margin: 0; */
+  /* padding: 0; */
+=======
+>>>>>>> 571e51addabae4f04f1dee1cbd457253451c0f31
   font-family: sans-serif;
   box-sizing: border-box;
 }
@@ -18,7 +24,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+button {
   cursor: pointer;
 }
 
