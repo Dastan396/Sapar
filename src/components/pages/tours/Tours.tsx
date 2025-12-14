@@ -9,14 +9,13 @@ import car3 from "@/src/assets/img/car3.svg";
 import { useRouter } from "next/navigation";
 
 export default function TourPage() {
+  const router = useRouter()
   const [priceRange, setPriceRange] = useState([1299, 3999]);
   const [dayFilter, setDayFilter] = useState("3-5");
   const [groupType, setGroupType] = useState({
     group: true,
     individual: false,
   });
-  // const nav = usenavigate()
-  const router = useRouter();
   const tours = [
     {
       id: 1,
@@ -206,7 +205,7 @@ export default function TourPage() {
           {groupType.individual && (
             <div className="grid grid-cols-3 gap-8 pt-10">
               {cars.map((c) => (
-                <div key={c.id} className="text-center">
+                <div key={c.id} className="text-center" onClick={() => router.push("/cars")}>
                   <div className="relative h-40 w-full mb-3 cursor-pointer">
                     <Image
                       src={c.img}
