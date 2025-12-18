@@ -7,5 +7,4 @@ interface ILayoutProps {
 const layout: FC<ILayoutProps> = ({ children }) => {
   return <LayoutSite>{children}</LayoutSite>;
 };
-
 export default layout;
