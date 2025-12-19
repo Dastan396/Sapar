@@ -94,9 +94,9 @@ export default function TourDetail() {
   }, []);
 
   return (
-    <div className="pt-44  min-h-screen bg-gradient-to-br from-white to-[#ff6600]/20 flex justify-center p-4 md:p-10 relative">
+    <div className="mt-28  min-h-screen bg-gradient-to-br from-white to-[#ff6600]/20 flex justify-center p-4 md:p-10 relative">
       <div className="container mx-auto">
-        {/* Breadcrumb */}
+
         <div className="text-sm text-gray-500 mb-6 flex gap-1 flex-wrap">
           <span
             className="cursor-pointer hover:underline"
@@ -104,7 +104,7 @@ export default function TourDetail() {
           >
             Главная
           </span>
-          /
+          0// /
           <span
             className="cursor-pointer hover:underline"
             onClick={() => router.push("/tours")}
@@ -114,13 +114,13 @@ export default function TourDetail() {
           /<span className="text-black font-semibold">Сары-Челек</span>
         </div>
 
-        {/* Main */}
+
         {tour.map((el) => (
           <div
             key={el.id}
             className="flex flex-col lg:flex-row gap-10 items-start"
           >
-            {/* Images */}
+
             <div className="w-full lg:max-w-[600px]">
               <motion.div whileHover={{ scale: 1.03 }}>
                 <Image
@@ -146,7 +146,7 @@ export default function TourDetail() {
               </div>
             </div>
 
-            {/* Info */}
+
             <div className="flex flex-col max-w-[400px] gap-6 w-full">
               <h1 className="text-3xl font-bold">{el.title}</h1>
               <p className="text-gray-700 leading-relaxed">{el.description}</p>
@@ -180,7 +180,7 @@ export default function TourDetail() {
           </div>
         ))}
 
-        {/* Features */}
+
         <div className="flex flex-wrap justify-between mt-10 gap-4">
           {tourFeatures.map((item) => (
             <motion.div
@@ -200,7 +200,7 @@ export default function TourDetail() {
           ))}
         </div>
 
-        {/* Program */}
+
         <div className="flex flex-col items-center mt-16 w-full">
           <h1 className="text-[30px] text-center font-bold">Программа тура</h1>
           <div className="max-w-3xl mx-auto mt-8 flex flex-col gap-4 w-full">
@@ -248,7 +248,7 @@ export default function TourDetail() {
           </div>
         </div>
 
-        {/* Sticky booking button */}
+
         <div
           id="booking-button"
           className="w-full flex justify-center z-50 fixed left-1/2 transition-all duration-300"
@@ -267,7 +267,7 @@ export default function TourDetail() {
               boxShadow: "0px 0px 25px rgba(255,165,0,0.5)",
             }}
             className="px-12 py-4 bg-orange-500 text-white rounded-lg text-[15px] hover:bg-orange-600 animate-pulse shadow-lg"
-            onClick={() => router.push("/")}
+            onClick={() => router.push("/order")}
           >
             Забронировать
           </motion.button>

@@ -18,7 +18,7 @@ const CarDetail = () => {
   };
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-gray-50 to-white py-12 pl-25 ">
+    <section className="min-h-screen bg-gradient-to-br from-gray-50 to-white py-12 pl-25 pt-32 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
           <div className="lg:col-span-5">
@@ -186,83 +186,82 @@ const CarDetail = () => {
             </div>
           </div>
 
-       <div className="lg:col-span-3">
-  <div className="sticky top-6 bg-white rounded-2xl shadow-xl border border-gray-100 p-6 flex flex-col h-full">
-    <h3 className="text-2xl font-bold mb-6 text-gray-900">
-      Забронировать
-    </h3>
+          <div className="lg:col-span-3">
+            <div className="sticky top-6 bg-white rounded-2xl shadow-xl border border-gray-100 p-6 flex flex-col h-full">
+              <h3 className="text-2xl font-bold mb-6 text-gray-900">
+                Забронировать
+              </h3>
 
-    <div className="space-y-4 flex-1">
-      <div>
-        <label className="block text-sm font-medium text-gray-700 mb-2">
-          Ваше имя
-        </label>
-        <input
-          type="text"
-          placeholder="Введите имя"
-          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all"
-        />
-      </div>
+              <div className="space-y-4 flex-1">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Ваше имя
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Введите имя"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all"
+                  />
+                </div>
 
-      <div>
-        <label className="block text-sm font-medium text-gray-700 mb-2">
-          Телефон
-        </label>
-        <input
-          type="tel"
-          placeholder="+996 XXX XXX XXX"
-          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all"
-        />
-      </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Телефон
+                  </label>
+                  <input
+                    type="tel"
+                    placeholder="+996 XXX XXX XXX"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all"
+                  />
+                </div>
 
-      <div>
-        <label className="block text-sm font-medium text-gray-700 mb-2">
-          Дата начала
-        </label>
-        <input
-          type="date"
-          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all"
-        />
-      </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Дата начала
+                  </label>
+                  <input
+                    type="date"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all"
+                  />
+                </div>
 
-      <div>
-        <label className="block text-sm font-medium text-gray-700 mb-2">
-          Дата окончания
-        </label>
-        <input
-          type="date"
-          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all"
-        />
-      </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Дата окончания
+                  </label>
+                  <input
+                    type="date"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all"
+                  />
+                </div>
 
-      <label className="flex items-center gap-3 cursor-pointer">
-        <input
-          type="checkbox"
-          className="w-5 h-5 text-red-500 rounded border-gray-300 focus:ring-red-500"
-        />
-        <span className="text-sm text-gray-700">
-          Доставка по адресу
-        </span>
-      </label>
+                <label className="flex items-center gap-3 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    className="w-5 h-5 text-red-500 rounded border-gray-300 focus:ring-red-500"
+                  />
+                  <span className="text-sm text-gray-700">
+                    Доставка по адресу
+                  </span>
+                </label>
 
-      <div>
-        <input
-          type="text"
-          placeholder="Адрес доставки"
-          className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all"
-        />
-      </div>
-    </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Адрес доставки"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 outline-none transition-all"
+                  />
+                </div>
+              </div>
 
-    <button
-      onClick={rentCar}
-      className="mt-auto w-full bg-gradient-to-r from-red-500 to-orange-500 text-white py-4 rounded-xl text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-    >
-      Забронировать сейчас
-    </button>
-  </div>
-</div>
-
+              <button
+                onClick={rentCar}
+                className="mt-auto w-full bg-gradient-to-r from-red-500 to-orange-500 text-white py-4 rounded-xl text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+              >
+                Забронировать сейчас
+              </button>
+            </div>
+          </div>
         </div>
 
         <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
