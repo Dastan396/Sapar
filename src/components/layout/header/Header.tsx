@@ -9,13 +9,13 @@ import { useRouter } from "next/navigation";
 import Headerlogo from "@/src/assets/header.jpg";
 
 const Header: FC = () => {
-  const [fav, setFav] = useState(false);
   const [isDark, setIsDark] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [fav, setFav] = useState(false);
   const router = useRouter();
 
   const toggleTheme = () => {
-    setIsDark(!isDark);
+    setIsDark((prev) => !prev);
     document.documentElement.classList.toggle("dark");
   };
 
@@ -84,15 +84,25 @@ const Header: FC = () => {
               )}
             </button>
 
+            {/* Login */}
             <button
-              className="lg:hidden"
-              onClick={() => setMenuOpen(!menuOpen)}
+              onClick={() => router.push("/auth")}
+              className="bg-orange-500 text-white px-4 py-2 rounded-lg"
             >
-              {menuOpen ? <X /> : <Menu />}
+              Войти
             </button>
           </div>
+
+          {/* BURGER (mobile only) */}
+          <button
+            className="lg:hidden"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            {menuOpen ? <X /> : <Menu />}
+          </button>
         </div>
 
+        {/* MOBILE MENU */}
         {menuOpen && (
           <div className="lg:hidden mt-3 bg-white rounded-2xl shadow-lg p-5 flex flex-col gap-4">
             <Link href="/tours">Туры</Link>

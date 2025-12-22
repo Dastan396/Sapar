@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { SlLike } from "react-icons/sl";
 import { FiPlus } from "react-icons/fi";
-
 import tourimg from "@/src/assets/Сары-Челек.jpg";
 import touragent from "@/src/assets/masterTour.svg";
 import location from "@/src/assets/location.svg";
@@ -167,7 +166,7 @@ export default function TourDetail() {
                 />
                 <div>
                   <p className="font-semibold">Master Tour</p>
-                  <p className="inline-flex items-center gap-2 bg-[#ff6600] text-white text-sm rounded px-2 py-[2px] my-1">
+                  <p className="inline-flex items-center gap-2 bg-[#ff6600] text-white text-sm rounded px-2 py-0.5 my-1">
                     <SlLike className="text-white" size={15} />{" "}
                     {Math.round(review)}/10
                   </p>
